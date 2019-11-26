@@ -14,12 +14,12 @@ class UserBehavior(TaskSet):
         self.client.get("/test/redis")
     # @task(2)
     # def baidu2(self):
-    #     self.client.get("/#/exchange?symbol=ZXT-KTC")
+    #     self.client.get("****")
 
 
 
 class WebsiteUser(HttpLocust):
     task_set = UserBehavior
-    # host = "https://bibo.gold/#/"
+    # host = "******"
     min_wait = 3000
     max_wait = 6000
